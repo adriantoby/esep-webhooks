@@ -1,4 +1,6 @@
+using System.Text;
 using Amazon.Lambda.Core;
+using Newtonsoft.Json;
 
 // Assembly attribute to enable the Lambda function's JSON input to be converted into a .NET class.
 [assembly: LambdaSerializer(typeof(Amazon.Lambda.Serialization.SystemTextJson.DefaultLambdaJsonSerializer))]
@@ -7,7 +9,7 @@ namespace EsepWebhook;
 
 public class Function
 {
-    // testing
+    
     // / <summary>
     // / A simple function that takes a string and does a ToUpper
     // / </summary>
